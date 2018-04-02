@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //立即执行函数
+        var a = (function asd(b) {
+            if( b === 1 ) {
+                return 1 ;
+            } else {
+                return asd(b-1) * b;
+            }
+        }(10))
+        console.log(a);
+
+        //创建类
+        function Person(name,age,sex) {
+            this.name = name ;
+            this.age = age ;
+            this.sex = sex ;
+            this.getName = function() {
+                return this.name ;
+            }
+        }
+
+        //新建对像
+        var p1 = new Person('zhangsan',18,'male');
+        var p2 = new Person('lisi',20,'female');
+
+        //打印用户名称
+        console.log(p1.getName());
+        console.log(p2.getName());
+
+        
+
+    </script>
+</body>
+</html>

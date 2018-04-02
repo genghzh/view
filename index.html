@@ -57,6 +57,58 @@
             font-size: 30px;
             color:#FFF;
         }
+
+        /*定位练习*/
+        .box {
+                margin:100px;
+                width: 300px;
+                height: 200px;
+                border:1px solid black;
+                -moz-box-shadow: 5px 5px 10px #112233;
+                -o-box-shadow: 5px 5px 10px #112233;
+                box-shadow: 5px 5px 10px #112233;
+                -webkit-box-shadow:5px 5px 10px #112233;
+                border-image: -webkit-linear-gradient( red , blue);
+                border-image: -moz-linear-gradient( red, blue);
+                border-image: -o-linear-gradient(red,blue);
+                border-image: linear-gradient( red , blue);
+                position: relative;
+        }
+
+        .row {
+            position: absolute;
+ /*           border-image: -webkit-linear-gradient( red , blue);
+            border-image: -moz-linear-gradient( red, blue);
+            border-image: -o-linear-gradient(red,blue);
+            border-image: linear-gradient( red , blue);*/
+            border:1px solid #CCF1FC;
+            padding:13px;
+            border-image: -webkit-linear-gradient(blue, black, green) 10 5;
+        }
+
+        .row1 {
+            border-width:3px 0px 0px  3px ;
+            left:-4px;
+            top:-4px;
+        }
+
+        .row2 {
+            border-width:3px 3px 0px 0px;
+            right:-4px;
+            top:-4px;
+        }
+
+        .row3 {
+            border-width:0px 3px 3px 0px;
+            right:-4px;
+            bottom:-4px;
+        }
+
+        .row4 {
+            border-width:0px 0px 3px 3px ;
+            left:-4px;
+            bottom:-4px;
+        }
     </style>
 </head>
 <body>
@@ -70,7 +122,13 @@
         <li><a href="#">360</a></li>
         <li><a href="#">阿里巴巴</a></li>
     </ul>
-aaaaaaa
+    <!--定位练习-->
+    <div class="box">
+        <span class="row row1"></span>
+        <span class="row row2"></span>
+        <span class="row row3"></span>
+        <span class="row row4"></span>
+    </div>
     <script>
         //立即执行函数
         var a = (function asd(b) {

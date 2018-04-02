@@ -3,8 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        * {
+            padding:0px;
+            margin: 0px;
+            font-size: 16px;
+            font-family: "Arial Narrow";
+        }
+        ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        ul::after {
+            display:block;
+            content: "";
+            clear:both;
+        }
+        ul li {
+            float:left;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color:#F40;
+            font-size: 20px;
+            line-height: 30px;
+            padding:10px;
+            border-radius: 15px;
+            background-color: #FFF;
+        }
+
+        ul li a:hover{
+            color:#FFFFFF;
+            background-color: #FF4400;
+        }
+
+        .nav {
+            width:100%;
+            height:50px;
+            background-color: #123;
+        }
+
+        .nav .mid-nav {
+            width:80%;
+            height:50px;
+            background-color: #FF4400;
+            margin:0 auto;
+            line-height: 50px;
+            text-align: center;
+            font-size: 30px;
+            color:#FFF;
+        }
+    </style>
 </head>
 <body>
+<div class="nav">
+    <div class="mid-nav">中华人民共和国</div>
+</div>
+    <ul>
+        <li><a href="#"> 百度</a></li>
+        <li><a href="#">Google</a></li>
+        <li><a href="#">搜狗</a></li>
+        <li><a href="#">360</a></li>
+        <li><a href="#">阿里巴巴</a></li>
+    </ul>
+aaaaaaa
     <script>
         //立即执行函数
         var a = (function asd(b) {
@@ -37,13 +103,14 @@
         //GO,AO
         var aa = 123;
         function fun() {
-            console.log(bb);  //funciton
+            console.log(bb); //funciton
             var bb = cc = 234;
             console.log(bb); //234
             function bb(){
             }
             console.log(bb); //234
         }
+
 
 
     </script>
